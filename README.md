@@ -3,7 +3,7 @@
 BabelMorph: a Multilingual Morphological Library
 
 Stay tuned for the release of BabelMorph in other languages!  
-news: in September we plan a new release of the library, adding and updating the following languages:
+***_NEWS:_*** in September we plan a new release of the library, adding and updating the following languages:
 Albanian, Croatian, Danish, German, Italian, Latin, Norwegian, Polish, Slovenian, Swedish, Turkish and Ukrainian. 
   
 1. Introduction
