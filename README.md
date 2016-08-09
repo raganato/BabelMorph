@@ -3,7 +3,9 @@
 BabelMorph: a Multilingual Morphological Library
 
 Stay tuned for the release of BabelMorph in other languages!  
- 
+news: in September we plan a new release of the library, adding and updating the following languages:
+Albanian, Croatian, Danish, German, Italian, Latin, Norwegian, Polish, Slovenian, Swedish, Turkish and Ukrainian. 
+  
 1. Introduction
 =========================
 
@@ -63,8 +65,7 @@ Number of lemma and words divided by parts of speech.
 5. License
 =========================
 
-Copyright (c) 2016 Sapienza University of Rome.
-All Rights Reserved.
+BabelMorph and its API are licensed under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 License. 
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
 
