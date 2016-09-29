@@ -28,7 +28,7 @@ public class Example
 		
 		BabelMorph bm = BabelMorph.getInstance();
 	
-		String lemma = "président";
+		String lemma = "présider";
 		System.out.println("morphology from the lemma: \""+lemma+"\"");
 		List<BabelMorphWord> bmwFromLemma = bm.getMorphologyFromLemma(Language.FR, lemma);
 		System.out.println("Lemma\tLang\tPoS\tinflected forms");

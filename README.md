@@ -4,10 +4,8 @@ BabelMorph: a Multilingual Morphological Library
 
 Stay tuned for the release of BabelMorph in other languages! 
 
-\*\*\*
-***_NEWS:_*** in September we plan a new release of the library, adding and updating the following languages:
-Albanian, Croatian, Danish, German, Italian, Latin, Norwegian, Polish, Slovenian, Swedish, Turkish and Ukrainian. 
-\*\*\*
+BabelMorph contains the inflection from the [UniMorph project](http://ckirov.github.io/UniMorph/)!
+The new index is UniMorphoIndex-v1.0, you just have to change the path in the babelmorph.properties file (inside config) to use it. The index contains word inflections for 166 languages, covering nouns, verbs and adjectives.  
 
 1. Introduction
 =========================
