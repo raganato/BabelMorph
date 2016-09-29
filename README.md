@@ -71,6 +71,13 @@ BabelMorph and its API are licensed under a Creative Commons Attribution-Noncomm
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
 
+If you use this API, please link to [this repository](https://github.com/raganato/BabelMorph). 
+
+Reference for the UniMorphIndex:
+
+> Christo Kirov; John Sylak-Glassman; Roger Que; and David Yarowsky. In press. Very-large scale parsing and normalization of Wiktionary morphological paradigms. 
+> Proceedings of the 10th International Conference on Language Resources and Evaluation (LREC 2016). Portorož, Slovenia: European Language Resources Association (ELRA). 
+
 For more information please contact:
 
 > raganato atsign di (dot) uniroma1 (dot) it
