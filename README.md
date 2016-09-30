@@ -5,7 +5,7 @@ BabelMorph: a Multilingual Morphological Library
 Stay tuned for the release of BabelMorph in other languages! 
 
 ### NEWS:
-BabelMorph includes the inflection from the [UniMorph project](http://ckirov.github.io/UniMorph/)!
+Now BabelMorph, additionally, includes the inflection from the [UniMorph project](http://ckirov.github.io/UniMorph/)!
 You can download the new index (UniMorphIndex-v1.0.zip) from [here](https://drive.google.com/file/d/0B-Ba2nFPJEUCMWE3bk9wbHBTTDQ/view?usp=sharing) ~259MB. 
 Just change the path in the babelmorph.properties file (inside the config folder) to use it. The index contains word inflections for **166** languages, covering nouns, verbs and adjectives.  
 
@@ -74,11 +74,12 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 If you use this API, please link to [this repository](https://github.com/raganato/BabelMorph). 
 
-Reference for the UniMorphIndex:
-
-> Christo Kirov; John Sylak-Glassman; Roger Que; and David Yarowsky. In press. Very-large scale parsing and normalization of Wiktionary morphological paradigms. 
-> Proceedings of the 10th International Conference on Language Resources and Evaluation (LREC 2016). Portorož, Slovenia: European Language Resources Association (ELRA). 
-
 For more information please contact:
 
 > raganato atsign di (dot) uniroma1 (dot) it
+
+
+If you use the UniMorphIndex, please cite also this paper:
+
+> Christo Kirov; John Sylak-Glassman; Roger Que; and David Yarowsky. In press. Very-large scale parsing and normalization of Wiktionary morphological paradigms. 
+> Proceedings of the 10th International Conference on Language Resources and Evaluation (LREC 2016). Portorož, Slovenia: European Language Resources Association (ELRA). 
