@@ -1,19 +1,11 @@
 package it.uniroma1.lcl.babelmorph.example;
 
-import it.uniroma1.lcl.babelmorph.BabelMorph;
-import it.uniroma1.lcl.babelmorph.BabelMorphConfiguration;
-import it.uniroma1.lcl.babelmorph.BabelMorphWord;
-import it.uniroma1.lcl.babelmorph.iterator.BabelMorphWordIterator;
-import it.uniroma1.lcl.jlt.util.Language;
-
-import java.util.HashMap;
 import java.util.List;
-import java.util.Set;
-import java.util.TreeMap;
-
-import com.google.common.collect.HashMultimap;
 
 import edu.mit.jwi.item.POS;
+import it.uniroma1.lcl.babelmorph.BabelMorph;
+import it.uniroma1.lcl.babelmorph.BabelMorphWord;
+import it.uniroma1.lcl.jlt.util.Language;
 
 
 /**
@@ -27,7 +19,7 @@ public class Example
 	{
 		
 		BabelMorph bm = BabelMorph.getInstance();
-	
+
 		String lemma = "présider";
 		System.out.println("morphology from the lemma: \""+lemma+"\"");
 		List<BabelMorphWord> bmwFromLemma = bm.getMorphologyFromLemma(Language.FR, lemma);

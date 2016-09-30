@@ -5,8 +5,9 @@ BabelMorph: a Multilingual Morphological Library
 Stay tuned for the release of BabelMorph in other languages! 
 
 ### NEWS:
-BabelMorph contains the inflection from the [UniMorph project](http://ckirov.github.io/UniMorph/)!
-The new index is UniMorphoIndex-v1.0, you just have to change the path in the babelmorph.properties file (inside the config folder) to use it. The index contains word inflections for **166** languages, covering nouns, verbs and adjectives.  
+BabelMorph includes the inflection from the [UniMorph project](http://ckirov.github.io/UniMorph/)!
+You can download the new index (UniMorphIndex-v1.0.zip) from [here](https://drive.google.com/file/d/0B-Ba2nFPJEUCMWE3bk9wbHBTTDQ/view?usp=sharing) ~259MB. 
+Just change the path in the babelmorph.properties file (inside the config folder) to use it. The index contains word inflections for **166** languages, covering nouns, verbs and adjectives.  
 
 1. Introduction
 =========================
