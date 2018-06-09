@@ -3,15 +3,14 @@
  */
 package it.uniroma1.lcl.babelmorph.example;
 
-import it.uniroma1.lcl.babelmorph.BabelMorph;
-import it.uniroma1.lcl.babelmorph.BabelMorphWord;
-import it.uniroma1.lcl.babelmorph.iterator.BabelMorphWordIterator;
-import it.uniroma1.lcl.jlt.util.Language;
-
 import java.util.Set;
 import java.util.TreeMap;
 
 import edu.mit.jwi.item.POS;
+import it.uniroma1.lcl.babelmorph.BabelMorph;
+import it.uniroma1.lcl.babelmorph.BabelMorphWord;
+import it.uniroma1.lcl.babelmorph.Language;
+import it.uniroma1.lcl.babelmorph.iterator.BabelMorphWordIterator;
 
 /**
  * @author raganato
@@ -49,7 +48,7 @@ public class Stats
 			BabelMorphWord bmw = it.next();
 			POS pos = bmw.getPos();
 			int words = bmw.getSizeMorphology_map();
-			CountStats counter = countWords.get(bmw.getLanguage().getName());
+			CountStats counter = countWords.get(bmw.getLanguage().getLang());
 			if(counter == null)
 				counter = new CountStats();
 			if(pos == POS.NOUN){
@@ -69,7 +68,7 @@ public class Stats
 				counter.setNumAdj(n);
 			}
 			
-			countWords.put(bmw.getLanguage().getName(), counter);
+			countWords.put(bmw.getLanguage().getLang(), counter);
 		}
 		
 		System.out.println("language\twords\tnouns\tverbs\tadjectives");
@@ -89,7 +88,7 @@ public class Stats
 		{
 			BabelMorphWord bmw = it.next();
 			POS pos = bmw.getPos();
-			CountStats counter = countLemmas.get(bmw.getLanguage().getName());
+			CountStats counter = countLemmas.get(bmw.getLanguage().getLang());
 			if(counter == null)
 				counter = new CountStats();
 			if(pos == POS.NOUN){
@@ -103,7 +102,7 @@ public class Stats
 				counter.setNumAdj(n);
 			}
 			
-			countLemmas.put(bmw.getLanguage().getName(), counter);
+			countLemmas.put(bmw.getLanguage().getLang(), counter);
 		}
 		
 		System.out.println("language\twords\tnouns\tverbs\tadjectives");

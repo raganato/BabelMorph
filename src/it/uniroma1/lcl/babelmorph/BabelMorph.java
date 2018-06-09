@@ -4,9 +4,6 @@
 package it.uniroma1.lcl.babelmorph;
 
 
-import it.uniroma1.lcl.babelmorph.iterator.BabelMorphWordIterator;
-import it.uniroma1.lcl.jlt.util.Language;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -38,6 +35,7 @@ import com.google.common.collect.HashMultimap;
 import com.google.common.collect.SetMultimap;
 
 import edu.mit.jwi.item.POS;
+import it.uniroma1.lcl.babelmorph.iterator.BabelMorphWordIterator;
 
 /**
  * @author raganato

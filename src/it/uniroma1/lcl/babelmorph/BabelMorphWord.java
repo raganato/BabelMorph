@@ -3,10 +3,6 @@
  */
 package it.uniroma1.lcl.babelmorph;
 
-
-import it.uniroma1.lcl.jlt.util.Language;
-
-import com.google.common.collect.HashMultimap;
 import com.google.common.collect.SetMultimap;
 
 import edu.mit.jwi.item.POS;

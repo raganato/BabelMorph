@@ -2,17 +2,18 @@
 
 BabelMorph: a Multilingual Morphological Library
 
-Stay tuned for the release of BabelMorph in other languages! 
+### Index and Configuration
 
-### NEWS:
-Now BabelMorph, additionally, includes the inflection from the [UniMorph project](http://ckirov.github.io/UniMorph/)!
-You can download the new index (UniMorphIndex-v1.0.zip) from [here](https://drive.google.com/file/d/0B-Ba2nFPJEUCMWE3bk9wbHBTTDQ/view?usp=sharing) ~259MB. 
-Just change the path in the babelmorph.properties file (inside the config folder) to use it. The index contains word inflections for **166** languages, covering nouns, verbs and adjectives.  
+BabelMorph provides an index from the data of the [UniMorph project](http://unimorph.org/).  
+As first step, download the index (UniMorph.zip) from [here](https://drive.google.com/file/d/1H40HSDvBEIo_bbf-FoiC13BrWCI7-RTc/view?usp=sharing) ~124MB.  
+Next, configure the file located inside the config folder (babelmorph.properties) with the path to the Morphological index.  
+The index contains word inflections for **50** languages, covering nouns, verbs and adjectives.  
+For more stats, please visit [https://unimorph.github.io/](https://unimorph.github.io/)  
 
 1. Introduction
 =========================
 
-This package provides the Java API of BabelMorph, an open-source API for retrieving word inflections for nouns, verbs and adjectives based on Wiktionary.
+This package provides an open-source API for retrieving word inflections for nouns, verbs and adjectives based on Wiktionary.
 
 2. Requirements
 =========================
@@ -27,45 +28,27 @@ The following is a usage example (you can find and run it in the example package
 	//the entry point to access  the  content  available
 	BabelMorph bm = BabelMorph.getInstance();
 	
-	String lemma = "président";
-	System.out.println("morphology from the lemma: \""+lemma+"\"");
-	List<BabelMorphWord> bmwFromLemma = bm.getMorphologyFromLemma(Language.FR, lemma);
+	String lemma = "eat";
+	System.out.println("morphology from the lemma \""+lemma+"\" in "+Language.ENG);
+	List<BabelMorphWord> bmwFromLemma = bm.getMorphologyFromLemma(Language.ENG, lemma);
 	System.out.println("Lemma\tLang\tPoS\tinflected forms");
 	for(BabelMorphWord bmw : bmwFromLemma)
 		System.out.println(bmw);
-		
+	System.out.println();
+	
 	String word = "président";
-	System.out.println("morphology from the word: \""+word+"\"");
-	List<BabelMorphWord> bmwFromWord = bm.getMorphologyFromWord(Language.FR, word);
+	System.out.println("morphology from the word \""+word+"\" in "+Language.FRA);
+	List<BabelMorphWord> bmwFromWord = bm.getMorphologyFromWord(Language.FRA, word);
 	System.out.println("Lemma\tLang\tPoS\tinflected forms");
 	for(BabelMorphWord bmw : bmwFromWord)
 		System.out.println(bmw);
+	System.out.println();
 
 Where:
 
 `BabelMorphWord` contains a lemma associated with a language, a part-of-speech and a multi-map representing the various morphological inflections of the given lemma.
 
-4. Stats 
-=========================
-
-Number of lemma and words divided by parts of speech.
-
-| Language | Lemma | Nouns | Verbs | Adjectives | Words | Nouns | Verbs | Adjectives |
-| -------  | ----- | ----- | ----- | ---------- | ----- | ----- | ----- | ---------- |
-| Afrikaans | 1 216 | 895| 196  |125  | 3 271 |  2 049 | 768 | 454 |
-| English | 231 157 | 162 375 | 25 660  |43 122| 565 431 | 330 003 | 104 951 | 130 477 |
-| Esperanto | 9 905 |8 129 |  1 770 | 6 |103 113 | 30 746 | 72 343 | 24 |
-| French | 50 918 |28 453 |  11 107 |11 358 |449 028 | 62 877 | 323 739 | 62 412 |
-| Hebrew | 5 085 |3 297 |  1 100 | 688| 53 187 | 10 912 | 38 856 | 3 419 |
-| Ido | 3 809 | 2 500|  1 309 |0|50 001 | 5 000 | 45 001 | 0 |
-| Italian | 83 056 |45 764 | 16 874  |20 418 |608 164 | 96 979 | 441 620 | 69 565 |
-| Polish | 11 321 |8 104 | 1 396  | 1 821| 228 516 | 100 813 | 68 632 | 59 071 |
-| Portuguese | 48 672 | 29 633| 7 826  | 11 213| 583 527 | 63 958 | 477 799 | 41 770 | 
-| Spanish | 43 838 |27 680 | 6 701  | 9 457| 529 350 | 63 382 | 431 023 | 34 945 |
-| Swedish | 13 159 |8 922 | 2 323  | 1 914|117 272 | 73 771 | 25 852 | 17 649 |
-| Welsh | 1 578 |1 134 | 202  | 242|23 460 | 2 375 | 20 076 | 1 009 |
-
-5. License
+4. License
 =========================
 
 BabelMorph and its API are licensed under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 License. 
@@ -74,12 +57,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 If you use this API, please link to [this repository](https://github.com/raganato/BabelMorph). 
 
-For more information please contact:
-
-> raganato atsign di (dot) uniroma1 (dot) it
-
-
-If you use the UniMorphIndex, please cite also this paper:
+If you use the UniMorph index, please cite also this paper:
 
 > Christo Kirov; John Sylak-Glassman; Roger Que; and David Yarowsky. In press. Very-large scale parsing and normalization of Wiktionary morphological paradigms. 
 > Proceedings of the 10th International Conference on Language Resources and Evaluation (LREC 2016). Portorož, Slovenia: European Language Resources Association (ELRA). 

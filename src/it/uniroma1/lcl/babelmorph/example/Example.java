@@ -5,7 +5,7 @@ import java.util.List;
 import edu.mit.jwi.item.POS;
 import it.uniroma1.lcl.babelmorph.BabelMorph;
 import it.uniroma1.lcl.babelmorph.BabelMorphWord;
-import it.uniroma1.lcl.jlt.util.Language;
+import it.uniroma1.lcl.babelmorph.Language;
 
 
 /**
@@ -20,33 +20,38 @@ public class Example
 		
 		BabelMorph bm = BabelMorph.getInstance();
 
-		String lemma = "présider";
-		System.out.println("morphology from the lemma: \""+lemma+"\"");
-		List<BabelMorphWord> bmwFromLemma = bm.getMorphologyFromLemma(Language.FR, lemma);
+		String lemma = "eat";
+		System.out.println("morphology from the lemma \""+lemma+"\" in "+Language.ENG);
+		List<BabelMorphWord> bmwFromLemma = bm.getMorphologyFromLemma(Language.ENG, lemma);
 		System.out.println("Lemma\tLang\tPoS\tinflected forms");
 		for(BabelMorphWord bmw : bmwFromLemma)
 			System.out.println(bmw);
 		System.out.println();
 		
 		String word = "président";
-		System.out.println("morphology from the word: \""+word+"\"");
-		List<BabelMorphWord> bmwFromWord = bm.getMorphologyFromWord(Language.FR, word);
+		System.out.println("morphology from the word \""+word+"\" in "+Language.FRA);
+		List<BabelMorphWord> bmwFromWord = bm.getMorphologyFromWord(Language.FRA, word);
 		System.out.println("Lemma\tLang\tPoS\tinflected forms");
 		for(BabelMorphWord bmw : bmwFromWord)
 			System.out.println(bmw);
 		System.out.println();
 		
-		List<BabelMorphWord> bmwNounFromLemma = bm.getMorphologyFromLemma(Language.FR, lemma, POS.NOUN);
+		lemma = "stockwerk";
+		System.out.println("morphology from the lemma \""+lemma+"\" in "+Language.DEU);
+		List<BabelMorphWord> bmwNounFromLemma = bm.getMorphologyFromLemma(Language.DEU, lemma, POS.NOUN);
 		System.out.println("Lemma\tLang\tPoS\tinflected forms");
 		for(BabelMorphWord bmw : bmwNounFromLemma)
 			System.out.println(bmw);
 		System.out.println();
 		
-		List<BabelMorphWord> bmwVerbFromWord = bm.getMorphologyFromWord(Language.FR, word, POS.VERB);
+		word = "vedemmo";
+		System.out.println("morphology from the word \""+word+"\" in "+Language.ITA);
+		List<BabelMorphWord> bmwVerbFromWord = bm.getMorphologyFromWord(Language.ITA, word, POS.VERB);
 		System.out.println("Lemma\tLang\tPoS\tinflected forms");
 		for(BabelMorphWord bmw : bmwVerbFromWord)
 			System.out.println(bmw);
 		System.out.println();
+		
 		
 	}
 
