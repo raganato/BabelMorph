@@ -4,7 +4,7 @@ BabelMorph: a Multilingual Morphological Library
 
 ### Index and Configuration
 
-BabelMorph provides an index from the data of the [UniMorph project](http://unimorph.org/).  
+BabelMorph is an API to use the data from the [UniMorph project](http://unimorph.org/).  
 As first step, download the index (UniMorph.zip) from [here](https://drive.google.com/file/d/1H40HSDvBEIo_bbf-FoiC13BrWCI7-RTc/view?usp=sharing) ~124MB.  
 Next, configure the file located inside the config folder (babelmorph.properties) with the path to the Morphological index.  
 The index contains word inflections for **50** languages, covering nouns, verbs and adjectives.  
