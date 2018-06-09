@@ -34,7 +34,6 @@ The following is a usage example (you can find and run it in the example package
 	System.out.println("Lemma\tLang\tPoS\tinflected forms");
 	for(BabelMorphWord bmw : bmwFromLemma)
 		System.out.println(bmw);
-	System.out.println();
 	
 	String word = "président";
 	System.out.println("morphology from the word \""+word+"\" in "+Language.FRA);
@@ -42,7 +41,6 @@ The following is a usage example (you can find and run it in the example package
 	System.out.println("Lemma\tLang\tPoS\tinflected forms");
 	for(BabelMorphWord bmw : bmwFromWord)
 		System.out.println(bmw);
-	System.out.println();
 
 Where:
 
